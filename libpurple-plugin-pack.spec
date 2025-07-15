@@ -49,15 +49,15 @@ Zbiór wtyczek dla komunikatora Pidgin.
 %setup -q -n purple-plugin-pack-%{version}
 
 %build
-%meson build \
+%meson \
 	-Dtypes=all
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 %{__mv} $RPM_BUILD_ROOT%{_localedir}/{es_ES,es}
 
