@@ -22,6 +22,7 @@ BuildRequires:	ninja >= 1.5
 BuildRequires:	pango-devel
 BuildRequires:	pidgin-devel >= 2
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
